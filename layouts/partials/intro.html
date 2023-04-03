@@ -1,0 +1,16 @@
+<style>
+  .heh {
+    color: rgb(0, 94, 184);
+    background-color: transparent;
+    text-decoration: none;
+  }
+    </style>
+<section class="{{ .Site.Params.ascentColor | default "bg-pink-50" }} dark:bg-gray-900 dark:text-white text-black">
+  <div class="container max-w-screen-lg mx-auto px-6 py-12 grid md:grid-cols-2 gap-4 lg:gap-16 items-center">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">{{ .Site.Params.introTitle | safeHTML}}</h1>
+      <p class="font-light text-lg">{{ .Site.Params.introSubtitle | safeHTML}} na<b> <a class="heh" href="https://www.cvut.cz/">ČVUT</a> <a class="heh" href="https://fel.cvut.cz/cs">FEL</a></b></p>
+    </div>
+    <img class="rounded-lg shadow-sm" src="{{ .Site.Params.introPhoto }}" alt="{{ .Site.Title }}" />
+  </div>
+</section>
